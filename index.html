@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BatombariB Mood Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 40px;
+        transition: 0.3s;
+      }
+
+      h1 {
+        margin-bottom: 15px;
+        
+      }
+
+      input {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-bottom: 15px;
+      }
+
+      #greeting {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      #mood-box {
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+        margin: 20px auto;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      button {
+        padding: 8px 16px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        transition: 1s;
+        background-color: #0a3b5c;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #00233b;
+      }
+
+      #secret {
+        display: none;
+        color: green;
+        margin-top: 15px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BatombariB's Mood Dashboard</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <div id="greeting">Hello, friend!</div>
+
+    <div id="mood-box"></div>
+
+    <button id="growBtn">Grow</button>
+    <button id="shrinkBtn">Shrink</button>
+    <button id="toggleModeBtn">Toggle Day/Night</button>
+    <button id="secretBtn">Show Secret</button>
+
+    <div id="secret">"Just keep pushing for better and brighter tomorrow"</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
